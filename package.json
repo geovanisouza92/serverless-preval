@@ -1,0 +1,22 @@
+{
+  "name": "serverless-preval",
+  "version": "1.0.0",
+  "description": "Serverless example project using preval during build time",
+  "scripts": {
+    "dev": "babel-node $(npm bin)/serverless offline",
+    "build": "babel-node $(npm bin)/serverless package",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "babel-node $(npm bin)/serverless deploy"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-preval": "^1.4.1",
+    "babel-preset-env": "^1.6.0",
+    "serverless": "^1.17.0",
+    "serverless-offline": "^3.15.1",
+    "serverless-plugin-webpack": "^1.2.3",
+    "webpack": "^3.3.0"
+  }
+}
