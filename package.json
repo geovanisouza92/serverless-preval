@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "babel-node $(npm bin)/serverless offline",
     "build": "babel-node $(npm bin)/serverless package",
+    "build:production": "babel-node $(npm bin)/serverless package --stage=prod",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "babel-node $(npm bin)/serverless deploy"
+    "deploy": "babel-node $(npm bin)/serverless deploy",
+    "deploy:production": "babel-node $(npm bin)/serverless deploy --stage=prod"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
